@@ -138,7 +138,7 @@ document.getElementById('up').onsubmit=function(e){e.preventDefault();
  files.forEach(function(fl){var fd=new FormData();fd.append('file',fl);fd.append('upload_preset',UPLOAD_PRESET);fd.append('tags',[TAG,day,'by-'+who].join(','));
   fetch('https://api.cloudinary.com/v1_1/'+CLOUD_NAME+'/image/upload',{method:'POST',body:fd}).then(function(){n++;m.textContent='Uploaded '+n+' of '+files.length;if(n==files.length)setTimeout(load,1500)})})};
 load();
-</script><footer><div class="wrap">Prices are checked against official sites in October 2026 and can change. Items tagged Estimate are not confirmed. <a href="prices.html">See the full price page</a>.</div></footer><script>
+</script><footer><div class="wrap">Prices were checked in October 2026 and can change. Items marked Estimate are not confirmed. <a href="prices.html">See the trip cost estimate</a>.</div></footer><script>
 document.querySelectorAll('[data-wiki]').forEach(function(el){
  fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(el.getAttribute('data-wiki'))).then(function(r){return r.json()}).then(function(d){
   var s=null;if(d.thumbnail){s=d.thumbnail.source;if(d.originalimage&&d.originalimage.width>=900){s=s.replace(/\/\d+px-/,'/900px-')}}
