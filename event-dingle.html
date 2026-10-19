@@ -1,5 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dingle and Slea Head Drive | Ireland 2027</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><style>
-:root{--wein:#6E1423;--wein-d:#4A0E18;--gold:#C9A24B;--gold-l:#E8D29A;--green:#2E5B3C;--cream:#F7EFE0;--paper:#FFFBF2;--ink:#2A1A1C;--muted:#6F5B5C;--line:#E4D6BC}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dingle and Slea Head Drive | Ireland 2027</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@600;700&family=Uncial+Antiqua&display=swap" rel="stylesheet"><style>
+:root{--wein:#146236;--wein-d:#0B3A22;--gold:#C9A24B;--gold-l:#EBD79F;--green:#B8651B;--cream:#F5F0E1;--paper:#FFFEF9;--ink:#1F2A22;--muted:#5E6B60;--line:#D9D0B4}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.6 Georgia,'Times New Roman',serif}
 h1,h2,h3,.brand{font-family:'Playfair Display',Georgia,serif;line-height:1.15;margin:0}
@@ -11,8 +11,8 @@ a{color:var(--wein)}img{max-width:100%}
 .brand{font-size:19px;color:var(--gold-l);text-decoration:none;font-weight:700}
 .top nav a{color:var(--cream);text-decoration:none;margin-left:14px;font:600 14px/1 system-ui,sans-serif}
 .top nav a:hover{color:var(--gold)}
-.checker{height:14px;background:repeating-linear-gradient(90deg,var(--gold) 0 14px,var(--wein) 14px 28px)}
-.checker.gold{background:repeating-linear-gradient(90deg,var(--gold) 0 14px,var(--wein-d) 14px 28px)}
+.checker{height:16px;background:var(--wein-d) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='16'%3E%3Cpath d='M0 8Q12-4 24 8T48 8' stroke='%23C9A24B' fill='none' stroke-width='3.2'/%3E%3Cpath d='M0 8Q12 20 24 8T48 8' stroke='%23EBD79F' fill='none' stroke-width='3.2'/%3E%3C/svg%3E") repeat-x center}
+.checker.gold{height:16px;background:var(--wein-d) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='16'%3E%3Cpath d='M0 8Q12-4 24 8T48 8' stroke='%23C9A24B' fill='none' stroke-width='3.2'/%3E%3Cpath d='M0 8Q12 20 24 8T48 8' stroke='%23EBD79F' fill='none' stroke-width='3.2'/%3E%3C/svg%3E") repeat-x center}
 .hero{background:linear-gradient(160deg,var(--wein) 0,var(--wein-d) 100%);color:var(--cream);padding:54px 0 40px;text-align:center}
 .hero .script{font-size:30px;color:var(--gold-l)}
 .hero h1{font-size:clamp(38px,9vw,70px);margin:6px 0 10px}
@@ -76,7 +76,7 @@ td.r,th.r{text-align:right;white-space:nowrap}
 tr.sub td{background:#F3E7CD;font-weight:700}
 tr.tot td{background:var(--wein-d);color:var(--gold-l);font-weight:700;font-size:16px}
 .tag{font:700 11px system-ui,sans-serif;padding:2px 7px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em}
-.tag.ok{background:#DCE9DF;color:var(--green)}.tag.est{background:#F6E3B8;color:#7A5A12}
+.tag.ok{background:#DCEFE2;color:#146236}.tag.est{background:#F6E3B8;color:#7A5A12}
 .tablewrap{overflow-x:auto}
 footer{background:var(--wein-d);color:#D8C9AE;padding:26px 0;font:14px system-ui,sans-serif}
 footer a{color:var(--gold-l)}
@@ -84,6 +84,22 @@ footer a{color:var(--gold-l)}
 .grid figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden}
 .grid img{display:block;width:100%;height:170px;object-fit:cover}
 .grid figcaption{font:12px system-ui,sans-serif;padding:6px 8px;color:var(--muted)}
+.brand svg,.sham{width:20px;height:20px;vertical-align:-3px;color:var(--gold);margin-right:6px}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 20% 0,#1E7F49 0,var(--wein) 45%,var(--wein-d) 100%)!important}
+.herobg{position:absolute;inset:0;background:center/cover;opacity:.32}
+.hero .wrap{position:relative}
+.hero h1,h2.sec,.brand{font-family:'Uncial Antiqua','Playfair Display',Georgia,serif;font-weight:400}
+.hero h1{letter-spacing:.01em}
+.hero .sham{width:46px;height:46px;margin:0 0 4px}
+h2.sec{display:flex;align-items:center;gap:10px}
+h2.sec:after{content:"";flex:1;height:3px;background:linear-gradient(90deg,var(--gold),transparent);border-radius:3px}
+.day{box-shadow:0 8px 24px rgba(11,58,34,.12);border-radius:16px}
+.dfeature{position:relative;height:260px;background:linear-gradient(135deg,var(--wein),var(--wein-d)) center/cover;color:#fff}
+.dfeature:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,30,18,.05) 35%,rgba(6,30,18,.82) 100%)}
+.dfeature .ov{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:16px 20px}
+.dfeature .date{display:inline-block;background:var(--gold);color:var(--wein-d);font:700 13px system-ui,sans-serif;padding:4px 11px;border-radius:999px;margin-bottom:8px}
+.dfeature h3{font-size:clamp(26px,6vw,36px);color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.55)}
+.dfeature .bs{font:600 14px system-ui,sans-serif;color:var(--gold-l);margin-top:6px}
 .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
 .gal figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .gal img{display:block;width:100%;height:170px;object-fit:cover}
@@ -98,7 +114,7 @@ footer a{color:var(--gold-l)}
 .know .box h2{font-size:18px}
 form.up{display:grid;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:20px}
 form.up input,form.up select{padding:10px;border:1px solid var(--line);border-radius:6px;font:16px system-ui,sans-serif}
-</style></head><body><div class="top"><div class="wrap"><a class="brand" href="index.html">Ireland or Bust 2027</a><nav><a href="index.html#days">Itinerary</a><a href="prices.html">Prices</a><a href="gallery.html">Gallery</a></nav></div></div><div class="ev-hero"><div class="img" data-wiki="Dingle Peninsula"></div><div class="checker gold"></div>
+</style></head><body><div class="top"><div class="wrap"><a class="brand" href="index.html"><svg class="sham" viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor"><circle cx="12" cy="7" r="4.4"/><circle cx="7" cy="12.2" r="4.4"/><circle cx="17" cy="12.2" r="4.4"/><path d="M11 13q0 6-3.2 8.2h1.8q3.2-1.6 3.6-8.2z"/></g></svg>Ireland or Bust 2027</a><nav><a href="index.html#days">Itinerary</a><a href="prices.html">Prices</a><a href="gallery.html">Gallery</a></nav></div></div><div class="ev-hero"><div class="img" data-wiki="Dingle Peninsula"></div><div class="checker gold"></div>
 <div class="wrap"><div class="crumb"><a href="index.html#days">Back to itinerary</a></div><h1>Dingle and Slea Head Drive</h1>
 <div class="when">Sun, Feb 14, Full day</div><p style="max-width:60ch;margin:10px 0 0">A loop around the western tip of Europe&#x27;s edge, with beehive huts, cliffs and Atlantic views.</p>
 <div class="actions"><a class="btn btn-gold" href="https://en.wikipedia.org/wiki/Dingle_Peninsula" target="_blank" rel="noopener">Official info and tickets</a><a class="btn btn-line" style="color:#fff;border-color:#fff" href="https://www.google.com/maps/search/?api=1&query=Slea+Head+Drive+Dingle" target="_blank" rel="noopener">Open in Google Maps</a></div></div></div>
