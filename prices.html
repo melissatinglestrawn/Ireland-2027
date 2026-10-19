@@ -1,0 +1,160 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Prices | Ireland 2027</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><style>
+:root{--wein:#6E1423;--wein-d:#4A0E18;--gold:#C9A24B;--gold-l:#E8D29A;--green:#2E5B3C;--cream:#F7EFE0;--paper:#FFFBF2;--ink:#2A1A1C;--muted:#6F5B5C;--line:#E4D6BC}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.6 Georgia,'Times New Roman',serif}
+h1,h2,h3,.brand{font-family:'Playfair Display',Georgia,serif;line-height:1.15;margin:0}
+.script{font-family:'Dancing Script','Brush Script MT',cursive}
+a{color:var(--wein)}img{max-width:100%}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+.top{background:var(--wein-d);color:var(--cream);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px}
+.brand{font-size:19px;color:var(--gold-l);text-decoration:none;font-weight:700}
+.top nav a{color:var(--cream);text-decoration:none;margin-left:14px;font:600 14px/1 system-ui,sans-serif}
+.top nav a:hover{color:var(--gold)}
+.checker{height:14px;background:repeating-linear-gradient(90deg,var(--gold) 0 14px,var(--wein) 14px 28px)}
+.checker.gold{background:repeating-linear-gradient(90deg,var(--gold) 0 14px,var(--wein-d) 14px 28px)}
+.hero{background:linear-gradient(160deg,var(--wein) 0,var(--wein-d) 100%);color:var(--cream);padding:54px 0 40px;text-align:center}
+.hero .script{font-size:30px;color:var(--gold-l)}
+.hero h1{font-size:clamp(38px,9vw,70px);margin:6px 0 10px}
+.hero p{max-width:56ch;margin:0 auto;color:#EBDDC4}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.chip{background:rgba(255,255,255,.1);border:1px solid rgba(232,210,154,.5);border-radius:999px;padding:6px 14px;font:600 14px system-ui,sans-serif}
+.btn{display:inline-block;padding:11px 18px;border-radius:8px;text-decoration:none;font:700 15px system-ui,sans-serif;margin:4px 8px 4px 0}
+.btn-wine{background:var(--wein);color:#fff}.btn-gold{background:var(--gold);color:var(--wein-d)}
+.btn-line{border:2px solid var(--wein);color:var(--wein)}
+section{padding:36px 0}
+h2.sec{font-size:30px;color:var(--wein);margin-bottom:6px}
+.lede{color:var(--muted);margin:0 0 20px}
+.notice{background:var(--paper);border-left:6px solid var(--green);padding:14px 18px;border-radius:6px;margin:0 0 22px;font-size:16px}
+.notice b{color:var(--green)}
+.day{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:0 0 22px;overflow:hidden}
+.day header{background:var(--wein);color:var(--cream);padding:12px 18px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.day header h3{font-size:22px}.day header span{color:var(--gold-l);font:600 14px system-ui,sans-serif}
+.day .base{padding:10px 18px;background:#F3E7CD;font:600 14px system-ui,sans-serif;color:var(--wein-d)}
+.stops{list-style:none;margin:0;padding:6px 18px 14px}
+.stops li{padding:11px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;justify-content:space-between}
+.stops li:last-child{border:0}
+.stops .t{font:700 12px system-ui,sans-serif;color:var(--green);text-transform:uppercase;letter-spacing:.05em;display:block}
+.stops a.n{font-weight:700;font-size:18px;text-decoration:none;border-bottom:2px solid var(--gold)}
+.stops .n.plain{font-weight:700;font-size:18px}
+.stops small{display:block;color:var(--muted);font-size:14px}
+.price{white-space:nowrap;font:700 14px system-ui,sans-serif;color:var(--wein);background:#F3E7CD;border-radius:6px;padding:3px 9px}
+.price.free{color:var(--green)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.tile{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:10px;padding:16px}
+.tile b{display:block;font:700 28px 'Playfair Display',serif;color:var(--wein)}
+.tile span{font:14px system-ui,sans-serif;color:var(--muted)}
+.ev-hero{position:relative;color:#fff;background:var(--wein-d)}
+.ev-hero .img{position:absolute;inset:0;background:#4A0E18 center/cover;opacity:.55}
+.ev-hero .wrap{position:relative;padding-top:42px;padding-bottom:42px}
+.ev-hero h1{font-size:clamp(32px,7vw,54px);text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.ev-hero .when{color:var(--gold-l);font:700 15px system-ui,sans-serif;margin-top:8px}
+.crumb a{color:var(--gold-l);font:600 14px system-ui,sans-serif;text-decoration:none}
+.actions{margin-top:16px}
+.ev-layout{display:grid;grid-template-columns:1fr 330px;gap:30px;padding:34px 0}
+@media(max-width:820px){.ev-layout{grid-template-columns:1fr}}
+.story h2{font-size:28px;color:var(--wein);margin-bottom:8px}.story h3{font-size:20px;color:var(--green);margin:20px 0 4px}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:16px}
+.box h2{font-size:19px;color:var(--wein);margin-bottom:8px}
+.box ul{margin:0;padding-left:18px}.box li{margin:5px 0;font-size:15.5px}
+.box.price-box{border-top:5px solid var(--gold)}
+.big{font:700 26px 'Playfair Display',serif;color:var(--wein)}
+.mode{display:flex;gap:10px;align-items:flex-start;font:600 15px/1.4 system-ui,sans-serif}
+.mode svg{width:26px;height:26px;flex:none;color:var(--wein)}
+.linklist{list-style:none;padding:0!important}
+.photos h2{font-size:26px;color:var(--wein);margin-bottom:10px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:10px}
+.strip div{height:170px;border-radius:10px;background:linear-gradient(135deg,var(--wein),var(--green)) center/cover}
+.pager{display:flex;justify-content:space-between;gap:12px;padding:20px 0 40px}
+.pager a{flex:1;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink)}
+.pager small{display:block;font:700 12px system-ui,sans-serif;color:var(--green);text-transform:uppercase}
+.pager .next{text-align:right}
+table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden;font:15px/1.4 system-ui,sans-serif;margin-bottom:22px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--wein);color:var(--cream)}
+td.r,th.r{text-align:right;white-space:nowrap}
+tr.sub td{background:#F3E7CD;font-weight:700}
+tr.tot td{background:var(--wein-d);color:var(--gold-l);font-weight:700;font-size:16px}
+.tag{font:700 11px system-ui,sans-serif;padding:2px 7px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em}
+.tag.ok{background:#DCE9DF;color:var(--green)}.tag.est{background:#F6E3B8;color:#7A5A12}
+.tablewrap{overflow-x:auto}
+footer{background:var(--wein-d);color:#D8C9AE;padding:26px 0;font:14px system-ui,sans-serif}
+footer a{color:var(--gold-l)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.grid figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.grid img{display:block;width:100%;height:170px;object-fit:cover}
+.grid figcaption{font:12px system-ui,sans-serif;padding:6px 8px;color:var(--muted)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.gal figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.gal img{display:block;width:100%;height:170px;object-fit:cover}
+.gal figcaption{font:13px/1.35 system-ui,sans-serif;padding:7px 9px;color:var(--muted)}
+.credit{font:13px system-ui,sans-serif;color:var(--muted);margin-top:8px}
+.dstrip{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:2px;background:var(--line)}
+.dstrip div{height:120px;background:linear-gradient(135deg,var(--wein),var(--green)) center/cover}
+.dintro{padding:14px 18px 4px;margin:0;color:var(--ink)}
+.thumb{flex:none;width:72px;height:72px;border-radius:8px;background:linear-gradient(135deg,var(--wein),var(--green)) center/cover}
+.stops li .main{display:flex;gap:12px;align-items:flex-start;flex:1}
+.know{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.know .box h2{font-size:18px}
+form.up{display:grid;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:20px}
+form.up input,form.up select{padding:10px;border:1px solid var(--line);border-radius:6px;font:16px system-ui,sans-serif}
+</style></head><body><div class="top"><div class="wrap"><a class="brand" href="index.html">Ireland or Bust 2027</a><nav><a href="index.html#days">Itinerary</a><a href="prices.html">Prices</a><a href="gallery.html">Gallery</a></nav></div></div><section><div class="wrap"><h2 class="sec">February 2027 Prices</h2>
+<p class="lede">Trip dates used: Thu Feb 11 to Fri Feb 19, 2027, the same weekday pattern as the original March trip. Euro figures are per person unless noted. Tickets marked Official site came from the attraction's own page in October 2026, so they could rise by February.</p>
+<div class="notice"><b>How to read this.</b> Estimate means I could not confirm the figure and gave a realistic range. Lodging and car are split two ways, so adjust if your room or car has a different number of people.</div>
+<h3 style="margin:18px 0 8px">Getting there</h3>
+<div class="tablewrap"><table><tr><th>Item</th><th>Status</th><th class="r">Price</th></tr>
+<tr><td>Atlanta to Dublin round trip, Delta nonstop (about 7 hr 40 min)</td><td><span class="tag est">Estimate</span></td><td class="r" style="white-space:normal">About $685<br>$489 to $1,137</td></tr></table></div>
+<p class="lede">February is the cheapest month to fly this route. Fares move a lot, so watch them and book early.</p>
+<h3 style="margin:18px 0 8px">Attractions, per person</h3>
+<div class="tablewrap"><table><tr><th>Attraction</th><th>Status</th><th class="r">Price</th></tr><tr><td>Powerscourt gardens</td><td><span class="tag ok">Official site</span></td><td class="r">EUR 12</td></tr><tr><td>Rock of Cashel (Hore Abbey free)</td><td><span class="tag ok">Official site</span></td><td class="r">EUR 8</td></tr><tr><td>Blarney Castle</td><td><span class="tag ok">Official site</span></td><td class="r">EUR 24</td></tr><tr><td>Charles Fort</td><td><span class="tag ok">Official site</span></td><td class="r">EUR 4</td></tr><tr><td>Muckross House</td><td><span class="tag est">Estimate</span></td><td class="r">EUR 11 to EUR 14</td></tr><tr><td>Bunratty Castle and Folk Park</td><td><span class="tag est">Estimate</span></td><td class="r">EUR 18 to EUR 22</td></tr><tr><td>King John&#x27;s Castle</td><td><span class="tag ok">Official site</span></td><td class="r">EUR 9</td></tr><tr><td>Book of Kells and Old Library</td><td><span class="tag ok">Official site</span></td><td class="r">EUR 19</td></tr><tr><td>Christ Church and Dublinia combo</td><td><span class="tag ok">Official site</span></td><td class="r">EUR 25</td></tr><tr><td>Guinness Storehouse</td><td><span class="tag ok">Official site</span></td><td class="r">EUR 26 to EUR 36</td></tr><tr><td>Gravedigger Ghost Tour</td><td><span class="tag ok">Official site</span></td><td class="r">EUR 35</td></tr><tr class="sub"><td colspan="2">Attractions subtotal</td><td class="r">EUR 190 to EUR 208</td></tr></table></div>
+<h3 style="margin:18px 0 8px">Optional extras</h3>
+<div class="tablewrap"><table><tr><th>Item</th><th>Status</th><th class="r">Price</th></tr><tr><td>Killarney jaunting car</td><td><span class="tag est">Estimate</span></td><td class="r">EUR 20 to EUR 30</td></tr><tr><td>Dingle Oceanworld (swap for dolphin tour)</td><td><span class="tag est">Estimate</span></td><td class="r">EUR 18 to EUR 22</td></tr><tr><td>Book of Kells Experience upgrade</td><td><span class="tag ok">Official site</span></td><td class="r">EUR 6</td></tr></table></div>
+<h3 style="margin:18px 0 8px">Lodging, per room</h3>
+<div class="tablewrap"><table><tr><th>Stay</th><th>Status</th><th class="r">Price</th></tr><tr><td>Ibis Dublin, 1 night (Feb 12)</td><td><span class="tag est">Estimate</span></td><td class="r">EUR 85 to EUR 130</td></tr><tr><td>Milltown cottage, 5 nights (Feb 13 to 18)</td><td><span class="tag est">Estimate</span></td><td class="r">EUR 550 to EUR 800</td></tr><tr><td>Temple House Grand Canal Dock, 1 night (Feb 18)</td><td><span class="tag est">Estimate</span></td><td class="r">EUR 120 to EUR 180</td></tr><tr class="sub"><td colspan="2">Per room total</td><td class="r">EUR 755 to EUR 1,110</td></tr></table></div>
+<h3 style="margin:18px 0 8px">Car, per car</h3>
+<div class="tablewrap"><table><tr><th>Item</th><th>Status</th><th class="r">Price</th></tr><tr><td>Hertz Dublin Airport, about 7 days (standard car, Feb is the cheapest month)</td><td><span class="tag est">Estimate</span></td><td class="r">EUR 350 to EUR 450</td></tr><tr><td>Fuel, tolls and parking (about 1,350 km)</td><td><span class="tag est">Estimate</span></td><td class="r">EUR 120 to EUR 180</td></tr><tr class="sub"><td colspan="2">Per car total</td><td class="r">EUR 470 to EUR 630</td></tr></table></div>
+<h3 style="margin:18px 0 8px">Per person summary</h3>
+<div class="tablewrap"><table><tr><th>Category</th><th class="r">Per person</th></tr>
+<tr><td>Attractions</td><td class="r">EUR 190 to EUR 208</td></tr>
+<tr><td>Lodging (two per room)</td><td class="r">EUR 378 to EUR 555</td></tr>
+<tr><td>Car, fuel and parking (two per car)</td><td class="r">EUR 235 to EUR 315</td></tr>
+<tr><td>Food and drinks (EUR 45 to 65 a day, 8 days)</td><td class="r">EUR 360 to EUR 520</td></tr>
+<tr class="tot"><td>On the ground total</td><td class="r">EUR 1,163 to EUR 1,598</td></tr>
+<tr class="tot"><td>Plus flight</td><td class="r">About $685</td></tr></table></div>
+<h3 style="margin:18px 0 8px">Winter things that affect plans</h3>
+<ul><li>Charles Fort is closed Mondays in winter, so Cork and Kinsale are on Tuesday.</li>
+<li>Rock of Cashel last admission is 3:45 PM. Blarney last admission is 4 PM.</li>
+<li>Dolphin boat tours are seasonal, so that stop is now optional.</li>
+<li>Daylight ends around 5:30 PM. Drive times in the dark are longer.</li>
+<li>Extra car cost: Irish rental companies often add a fee for drivers under 25 or over 75, and an International Driving Permit is recommended for some licenses.</li></ul>
+<h3 style="margin:18px 0 8px">Where the numbers came from</h3>
+<ul class="linklist" style="padding:0">
+<li><a href="https://www.guinness-storehouse.com/">Guinness Storehouse</a> and <a href="https://thebettervacation.com/dublin/guinness-storehouse/">The Better Vacation</a></li>
+<li><a href="https://www.visittrinity.ie/book-now/">Book of Kells tickets</a></li>
+<li><a href="https://christchurchcathedral.ie/admission-tickets/">Christ Church Cathedral admission</a></li>
+<li><a href="https://blarneycastle.ie/plan-your-visit/">Blarney Castle plan your visit</a></li>
+<li><a href="https://heritageireland.ie/places-to-visit/the-rock-of-cashel/">Heritage Ireland: Rock of Cashel</a></li>
+<li><a href="https://www.dublinguide.ie/places/powerscourt-house-gardens/">Dublin Guide: Powerscourt</a></li>
+<li><a href="https://www.ireland-guide.com/tourist-attractions/charles-fort.10280.html">Ireland Guide: Charles Fort</a> and <a href="https://www.ireland-guide.com/tourist-attractions/king-johns-castle.10355.html">King John's Castle</a></li>
+<li><a href="https://dodublin.ie/city-attractions/gravedigger-ghost-tour">Do Dublin: Ghost tour</a></li>
+<li><a href="https://expedia.com/lp/flights/atl/dub/atlanta-to-dublin">Expedia: Atlanta to Dublin fares</a></li>
+<li><a href="https://www.hertz.com/us/en/location/ireland/dublin/dubt52">Hertz Dublin Airport</a></li></ul>
+</div></section><footer><div class="wrap">Prices are checked against official sites in October 2026 and can change. Items tagged Estimate are not confirmed. <a href="prices.html">See the full price page</a>.</div></footer><script>
+document.querySelectorAll('[data-wiki]').forEach(function(el){
+ fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(el.getAttribute('data-wiki'))).then(function(r){return r.json()}).then(function(d){
+  var s=null;if(d.thumbnail){s=d.thumbnail.source;if(d.originalimage&&d.originalimage.width>=900){s=s.replace(/\/\d+px-/,'/900px-')}}
+  if(s){el.style.backgroundImage='url('+s+')'}}).catch(function(){})});
+</script>
+<script>
+document.querySelectorAll('.gal').forEach(function(g){
+ var titles=g.getAttribute('data-wikis').split('|'),n=0,seen={};
+ titles.forEach(function(t){
+  fetch('https://en.wikipedia.org/api/rest_v1/page/media-list/'+encodeURIComponent(t)).then(function(r){return r.json()}).then(function(d){
+   (d.items||[]).filter(function(i){return i.type==='image'&&i.srcset&&i.srcset.length&&!/\.svg$/i.test(i.title)&&!/flag|map|logo|icon|commons|locator|symbol|plan|diagram|coat/i.test(i.title)}).slice(0,7).forEach(function(i){
+    if(n>=14||seen[i.title])return;seen[i.title]=1;n++;
+    var s=i.srcset[i.srcset.length-1].src;if(s.indexOf('//')===0)s='https:'+s;
+    var f=document.createElement('figure'),a=document.createElement('a'),im=new Image();
+    a.href='https://en.wikipedia.org/wiki/'+i.title;a.target='_blank';a.rel='noopener';im.loading='lazy';im.src=s;im.alt=t;a.appendChild(im);f.appendChild(a);
+    if(i.caption&&i.caption.text){var c=document.createElement('figcaption');c.textContent=i.caption.text;f.appendChild(c)}
+    g.appendChild(f)})}).catch(function(){})})});
+</script></body></html>

@@ -1,0 +1,130 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Christ Church Cathedral and Dublinia | Ireland 2027</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><style>
+:root{--wein:#6E1423;--wein-d:#4A0E18;--gold:#C9A24B;--gold-l:#E8D29A;--green:#2E5B3C;--cream:#F7EFE0;--paper:#FFFBF2;--ink:#2A1A1C;--muted:#6F5B5C;--line:#E4D6BC}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.6 Georgia,'Times New Roman',serif}
+h1,h2,h3,.brand{font-family:'Playfair Display',Georgia,serif;line-height:1.15;margin:0}
+.script{font-family:'Dancing Script','Brush Script MT',cursive}
+a{color:var(--wein)}img{max-width:100%}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+.top{background:var(--wein-d);color:var(--cream);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 18px}
+.brand{font-size:19px;color:var(--gold-l);text-decoration:none;font-weight:700}
+.top nav a{color:var(--cream);text-decoration:none;margin-left:14px;font:600 14px/1 system-ui,sans-serif}
+.top nav a:hover{color:var(--gold)}
+.checker{height:14px;background:repeating-linear-gradient(90deg,var(--gold) 0 14px,var(--wein) 14px 28px)}
+.checker.gold{background:repeating-linear-gradient(90deg,var(--gold) 0 14px,var(--wein-d) 14px 28px)}
+.hero{background:linear-gradient(160deg,var(--wein) 0,var(--wein-d) 100%);color:var(--cream);padding:54px 0 40px;text-align:center}
+.hero .script{font-size:30px;color:var(--gold-l)}
+.hero h1{font-size:clamp(38px,9vw,70px);margin:6px 0 10px}
+.hero p{max-width:56ch;margin:0 auto;color:#EBDDC4}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.chip{background:rgba(255,255,255,.1);border:1px solid rgba(232,210,154,.5);border-radius:999px;padding:6px 14px;font:600 14px system-ui,sans-serif}
+.btn{display:inline-block;padding:11px 18px;border-radius:8px;text-decoration:none;font:700 15px system-ui,sans-serif;margin:4px 8px 4px 0}
+.btn-wine{background:var(--wein);color:#fff}.btn-gold{background:var(--gold);color:var(--wein-d)}
+.btn-line{border:2px solid var(--wein);color:var(--wein)}
+section{padding:36px 0}
+h2.sec{font-size:30px;color:var(--wein);margin-bottom:6px}
+.lede{color:var(--muted);margin:0 0 20px}
+.notice{background:var(--paper);border-left:6px solid var(--green);padding:14px 18px;border-radius:6px;margin:0 0 22px;font-size:16px}
+.notice b{color:var(--green)}
+.day{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:0 0 22px;overflow:hidden}
+.day header{background:var(--wein);color:var(--cream);padding:12px 18px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline}
+.day header h3{font-size:22px}.day header span{color:var(--gold-l);font:600 14px system-ui,sans-serif}
+.day .base{padding:10px 18px;background:#F3E7CD;font:600 14px system-ui,sans-serif;color:var(--wein-d)}
+.stops{list-style:none;margin:0;padding:6px 18px 14px}
+.stops li{padding:11px 0;border-bottom:1px dashed var(--line);display:flex;gap:12px;align-items:flex-start;justify-content:space-between}
+.stops li:last-child{border:0}
+.stops .t{font:700 12px system-ui,sans-serif;color:var(--green);text-transform:uppercase;letter-spacing:.05em;display:block}
+.stops a.n{font-weight:700;font-size:18px;text-decoration:none;border-bottom:2px solid var(--gold)}
+.stops .n.plain{font-weight:700;font-size:18px}
+.stops small{display:block;color:var(--muted);font-size:14px}
+.price{white-space:nowrap;font:700 14px system-ui,sans-serif;color:var(--wein);background:#F3E7CD;border-radius:6px;padding:3px 9px}
+.price.free{color:var(--green)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.tile{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:10px;padding:16px}
+.tile b{display:block;font:700 28px 'Playfair Display',serif;color:var(--wein)}
+.tile span{font:14px system-ui,sans-serif;color:var(--muted)}
+.ev-hero{position:relative;color:#fff;background:var(--wein-d)}
+.ev-hero .img{position:absolute;inset:0;background:#4A0E18 center/cover;opacity:.55}
+.ev-hero .wrap{position:relative;padding-top:42px;padding-bottom:42px}
+.ev-hero h1{font-size:clamp(32px,7vw,54px);text-shadow:0 2px 12px rgba(0,0,0,.5)}
+.ev-hero .when{color:var(--gold-l);font:700 15px system-ui,sans-serif;margin-top:8px}
+.crumb a{color:var(--gold-l);font:600 14px system-ui,sans-serif;text-decoration:none}
+.actions{margin-top:16px}
+.ev-layout{display:grid;grid-template-columns:1fr 330px;gap:30px;padding:34px 0}
+@media(max-width:820px){.ev-layout{grid-template-columns:1fr}}
+.story h2{font-size:28px;color:var(--wein);margin-bottom:8px}.story h3{font-size:20px;color:var(--green);margin:20px 0 4px}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin-bottom:16px}
+.box h2{font-size:19px;color:var(--wein);margin-bottom:8px}
+.box ul{margin:0;padding-left:18px}.box li{margin:5px 0;font-size:15.5px}
+.box.price-box{border-top:5px solid var(--gold)}
+.big{font:700 26px 'Playfair Display',serif;color:var(--wein)}
+.mode{display:flex;gap:10px;align-items:flex-start;font:600 15px/1.4 system-ui,sans-serif}
+.mode svg{width:26px;height:26px;flex:none;color:var(--wein)}
+.linklist{list-style:none;padding:0!important}
+.photos h2{font-size:26px;color:var(--wein);margin-bottom:10px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:10px}
+.strip div{height:170px;border-radius:10px;background:linear-gradient(135deg,var(--wein),var(--green)) center/cover}
+.pager{display:flex;justify-content:space-between;gap:12px;padding:20px 0 40px}
+.pager a{flex:1;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--ink)}
+.pager small{display:block;font:700 12px system-ui,sans-serif;color:var(--green);text-transform:uppercase}
+.pager .next{text-align:right}
+table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden;font:15px/1.4 system-ui,sans-serif;margin-bottom:22px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{background:var(--wein);color:var(--cream)}
+td.r,th.r{text-align:right;white-space:nowrap}
+tr.sub td{background:#F3E7CD;font-weight:700}
+tr.tot td{background:var(--wein-d);color:var(--gold-l);font-weight:700;font-size:16px}
+.tag{font:700 11px system-ui,sans-serif;padding:2px 7px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em}
+.tag.ok{background:#DCE9DF;color:var(--green)}.tag.est{background:#F6E3B8;color:#7A5A12}
+.tablewrap{overflow-x:auto}
+footer{background:var(--wein-d);color:#D8C9AE;padding:26px 0;font:14px system-ui,sans-serif}
+footer a{color:var(--gold-l)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
+.grid figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.grid img{display:block;width:100%;height:170px;object-fit:cover}
+.grid figcaption{font:12px system-ui,sans-serif;padding:6px 8px;color:var(--muted)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.gal figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.gal img{display:block;width:100%;height:170px;object-fit:cover}
+.gal figcaption{font:13px/1.35 system-ui,sans-serif;padding:7px 9px;color:var(--muted)}
+.credit{font:13px system-ui,sans-serif;color:var(--muted);margin-top:8px}
+.dstrip{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:2px;background:var(--line)}
+.dstrip div{height:120px;background:linear-gradient(135deg,var(--wein),var(--green)) center/cover}
+.dintro{padding:14px 18px 4px;margin:0;color:var(--ink)}
+.thumb{flex:none;width:72px;height:72px;border-radius:8px;background:linear-gradient(135deg,var(--wein),var(--green)) center/cover}
+.stops li .main{display:flex;gap:12px;align-items:flex-start;flex:1}
+.know{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.know .box h2{font-size:18px}
+form.up{display:grid;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:20px}
+form.up input,form.up select{padding:10px;border:1px solid var(--line);border-radius:6px;font:16px system-ui,sans-serif}
+</style></head><body><div class="top"><div class="wrap"><a class="brand" href="index.html">Ireland or Bust 2027</a><nav><a href="index.html#days">Itinerary</a><a href="prices.html">Prices</a><a href="gallery.html">Gallery</a></nav></div></div><div class="ev-hero"><div class="img" data-wiki="Christ Church Cathedral, Dublin"></div><div class="checker gold"></div>
+<div class="wrap"><div class="crumb"><a href="index.html#days">Back to itinerary</a></div><h1>Christ Church Cathedral and Dublinia</h1>
+<div class="when">Thu, Feb 18, Afternoon</div><p style="max-width:60ch;margin:10px 0 0">A Viking era cathedral with a huge crypt, joined to a museum of Viking and medieval Dublin.</p>
+<div class="actions"><a class="btn btn-gold" href="https://christchurchcathedral.ie/admission-tickets/" target="_blank" rel="noopener">Official info and tickets</a><a class="btn btn-line" style="color:#fff;border-color:#fff" href="https://www.google.com/maps/search/?api=1&query=Christ+Church+Cathedral+Dublin" target="_blank" rel="noopener">Open in Google Maps</a></div></div></div>
+<div class="wrap"><div class="ev-layout"><article class="story"><h2>The story</h2><h3>The story</h3><p>Christ Church was founded around 1030 by the Hiberno Norse king Sitric Silkenbeard. The crypt is among the largest in Britain and Ireland.</p><h3>Dublinia</h3><p>The museum across a covered bridge covers Viking and medieval Dublin. It is the item to drop if the day is running behind schedule.</p><h3>The building</h3><p>The cathedral was founded around 1030 and rebuilt in stone in the 12th century by Normans, including Richard de Clare, known as Strongbow. It was heavily restored in the 19th century. The crypt is a long stone vaulted space beneath the church.</p><h3>Odd and famous things</h3><p>A mummified cat and rat in the crypt are a favorite curiosity, and the cathedral has long been linked to the heart relic of St. Laurence O&#x27;Toole. Dublin choirs from here also took part in the first performance of Handel&#x27;s Messiah in the city in 1742.</p><h3>Dublinia</h3><p>The museum next door explains Viking and medieval Dublin with reconstructions, artifacts and hands on exhibits. You can often climb a tower for city views if it is open.</p></article>
+<aside><div class="box price-box"><h2>Feb 2027 pricing</h2><ul><li><b>Cathedral alone, adult:</b> EUR 12</li><li><b>Cathedral and Dublinia combo:</b> EUR 25</li></ul></div>
+<div class="box"><h2>Getting there</h2><p class="mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 11l1.6-4.4A2 2 0 0 1 8.5 5h7a2 2 0 0 1 1.9 1.6L19 11h.5A1.5 1.5 0 0 1 21 12.5V17a1 1 0 0 1-1 1h-1v1.5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V18H8v1.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V18H4a1 1 0 0 1-1-1v-4.5A1.5 1.5 0 0 1 4.5 11zm3.1-4.6L7.2 11h9.6l-.9-4.6zM6.5 14a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zm11 0a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg><span>Walk from Trinity, about 15 minutes.</span></p></div>
+<div class="box"><h2>Hours</h2><p style="margin:0;font-size:15.5px">Tue and Thu 9:30 AM to 5:30 PM, Mon, Wed, Fri, Sat 9:30 AM to 6 PM. Last tour 45 min before close.</p></div>
+<div class="box"><h2>Good to know</h2><ul><li>Buy the combo at the cathedral welcome desk or at Dublinia.</li><li>Thursday closes at 5:30 PM.</li></ul></div>
+<div class="box"><h2>Links</h2><ul class="linklist"><li><a href="https://christchurchcathedral.ie/admission-tickets/" target="_blank" rel="noopener">Christ Church tickets</a></li><li><a href="https://en.wikipedia.org/wiki/Christ_Church_Cathedral,_Dublin" target="_blank" rel="noopener">Wikipedia: Christ Church Cathedral</a></li><li><a href="https://en.wikipedia.org/wiki/Dublinia" target="_blank" rel="noopener">Wikipedia: Dublinia</a></li></ul></div></aside></div>
+<section class="photos" style="padding-top:0"><h2>Photos</h2><div class="gal" data-wikis="Christ Church Cathedral, Dublin|Dublinia"></div><p class="credit">Photos come from Wikipedia and Wikimedia Commons. Tap a photo for its source and credit.</p></section>
+<nav class="pager"><a class="prev" href="event-book-of-kells.html"><small>Previous</small><span>Trinity College and the Book of Kells</span></a><a class="next" href="event-guinness.html"><small>Next</small><span>Guinness Storehouse</span></a></nav></div><footer><div class="wrap">Prices are checked against official sites in October 2026 and can change. Items tagged Estimate are not confirmed. <a href="prices.html">See the full price page</a>.</div></footer><script>
+document.querySelectorAll('[data-wiki]').forEach(function(el){
+ fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(el.getAttribute('data-wiki'))).then(function(r){return r.json()}).then(function(d){
+  var s=null;if(d.thumbnail){s=d.thumbnail.source;if(d.originalimage&&d.originalimage.width>=900){s=s.replace(/\/\d+px-/,'/900px-')}}
+  if(s){el.style.backgroundImage='url('+s+')'}}).catch(function(){})});
+</script>
+<script>
+document.querySelectorAll('.gal').forEach(function(g){
+ var titles=g.getAttribute('data-wikis').split('|'),n=0,seen={};
+ titles.forEach(function(t){
+  fetch('https://en.wikipedia.org/api/rest_v1/page/media-list/'+encodeURIComponent(t)).then(function(r){return r.json()}).then(function(d){
+   (d.items||[]).filter(function(i){return i.type==='image'&&i.srcset&&i.srcset.length&&!/\.svg$/i.test(i.title)&&!/flag|map|logo|icon|commons|locator|symbol|plan|diagram|coat/i.test(i.title)}).slice(0,7).forEach(function(i){
+    if(n>=14||seen[i.title])return;seen[i.title]=1;n++;
+    var s=i.srcset[i.srcset.length-1].src;if(s.indexOf('//')===0)s='https:'+s;
+    var f=document.createElement('figure'),a=document.createElement('a'),im=new Image();
+    a.href='https://en.wikipedia.org/wiki/'+i.title;a.target='_blank';a.rel='noopener';im.loading='lazy';im.src=s;im.alt=t;a.appendChild(im);f.appendChild(a);
+    if(i.caption&&i.caption.text){var c=document.createElement('figcaption');c.textContent=i.caption.text;f.appendChild(c)}
+    g.appendChild(f)})}).catch(function(){})})});
+</script></body></html>
